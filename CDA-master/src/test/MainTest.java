@@ -22,9 +22,9 @@ public class MainTest {
 		paciente.setEndereco("huehue");
 		paciente.setDdd("082");
 		paciente.setNumero("9924");
-		paciente.setGenero("woman");
+		paciente.setGenero("W");
 		paciente.setN_ano("1995");
-		paciente.setN_mes("maio");
+		paciente.setN_mes("05");
 		paciente.setN_dia("02");
 		paciente.setLocalnascimento("makina");
 		paciente.setAplicacao("qual?");
