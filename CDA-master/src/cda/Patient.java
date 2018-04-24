@@ -10,7 +10,7 @@ public class Patient {
 		
 		patient = "<patient>\n";
 		patient = patient + "<name>" + "\n" + "<given>" + paciente.getNome() + "</given>" + "\n" + "<family>" + paciente.getSobrenome() + "</family>" + "\n" + "</name>" + "\n";
-		patient = patient + "<administrativeGenderCode code=" + "\"" +paciente.getGenero() +"\"" + " codeSystem= + \"" + "2.16.840.1.113883.5.1" + "\"/>" + "\n";
+		patient = patient + "<administrativeGenderCode code=" + "\"" +paciente.getGenero() +"\"" + " codeSystem=\"" + "2.16.840.1.113883.5.1" + "\"/>" + "\n";
 		
 		if(paciente.getN_ano() != null){
 			patient = patient + "<birthtime value=" + "\"" + paciente.getN_ano() + paciente.getN_mes() + paciente.getN_dia() + "\"/>" + "\n";
