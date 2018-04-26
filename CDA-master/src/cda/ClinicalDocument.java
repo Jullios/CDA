@@ -1,6 +1,9 @@
 package cda;
 
 import pessoas.Paciente;
+import java.io.FileWriter;
+import java.io.File;
+import java.io.IOException;
 
 public class ClinicalDocument {
 	private String cda = "<?xml version=" + "\"1.0\"" + " encoding="+ "\"UTF-8\"?>" + "\n" + 
@@ -39,6 +42,16 @@ public class ClinicalDocument {
 		//checar como vai ficar a sessão 'componentOf'
 		cda = cda + StructBody.createBody(paciente);
 		cda = cda + "</ClinicalDocument>";
+		
+		FileWriter arquivo;
+		try {
+			arquivo = new FileWriter(new File(paciente.getId() + ".xml"));
+			arquivo.write(cda);
+			arquivo.close();
+			System.out.println("Arquivo criado");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		return cda;
 	}
 }

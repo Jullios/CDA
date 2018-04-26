@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument classCode="DOCCLIN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+<realmCode code='UV'/>
+<typeId root='2.16.840.1.113883.1.3' extension='ESC_MPD1'/>
+<templateId root='2.16.840.1.113883.10.20.1'/>
+<id root='M345' extension='2.16.840.1.113883.3.933'/>
+<code code='410.9' displayName='Diagnostico utilizando qual?' codeSystem='2.16.840.1.113883.6.103' codeSystemName='ICD-9-CM'/>
+<effectiveTime value="20171003"/>
+<confidentialityCode code="N" displayName='Normal' codeSystem='2.16.840.1.113883.5.25' codeSystemName='Confidentiality'/>
+<setId extension="MM1" root="2.16.840.1.113883.3.933"/>
+<versionNumber value="1"/>
+<copyTime value='20171003'/>
+<recordTarget>
+<patientRole>
+<id extension="123" root="2.16.840.1.113883.3.933"/>
+<addr>huehue</addr>
+<telecom value="+55(082)9924"/>
+<patient>
+<name>
+<given>joao</given>
+<family>meubom</family>
+</name>
+<administrativeGenderCode code="W" codeSystem="2.16.840.1.113883.5.1"/>
+<maritalStatusCode nullFlavor="UNK"/>
+<religiousAffiliationCode nullFlavor="UNK"/>
+<raceCode nullFlavor="UNK"/>
+<ethnicGroupCode nullFlavor="UNK"/>
+</patient>
+<providerOrganization>
+<id extension="MPred" root="2.16.840.1.113883.3.933"/>
+</providerOrganization>
+</patientRole>
+</recordTarget>
+<author>
+<time value="20180425"/>
+<assignedAuthor>
+<id root='2.16.840.1.113883.3.933' extension='qual?'/><assignedAuthoringDevice>
+<softwareName>qual?</softwareName>
+</assignedAuthoringDevice>
+</assignedAuthor>
+</author>
+<custodian>
+<assignedCustodian>
+<representedCustodianOrganization>
+<id extension="MPred" root="2.16.840.1.113883.3.933"/>
+<name>MyPred</name>
+</representedCustodianOrganization>
+</assignedCustodian>
+</custodian>
+<legalAuthenticator>
+<time value="20180425"/>
+<signatureCode code="S"/>
+<assignedEntity>
+<id extension="qual?" root="2.16.840.1.113883.3.933"/>
+<representedOrganization>
+<name>wtf</name>
+</representedOrganization>
+</assignedEntity>
+</legalAuthenticator>
+<relatedDocument typeCode="RPLC">
+<parentDocument>
+<id extension="123" root="2.16.840.1.113883.3.933"/>
+<setId extension="BB35" root="2.16.840.1.113883.3.933"/>
+<versionNumber value="1"/>
+</parentDocument>
+</relatedDocument>
+<component>
+<structuredBody>
+<languageCode code="pt-BR"/>
+<component>
+<section>
+<title>comp1</title>
+<text>
+<list>
+<item>
+<content>tomar remedio oi</content>
+</item>
+<item>
+<content>tentar nao morrer</content>
+</item>
+</list>
+</text>
+</section>
+</component>
+<component>
+<section>
+<title>comp2</title>
+<text>
+<list>
+<item>
+<content>nao tomar remedio</content>
+</item>
+<item>
+<content>testar depois</content>
+</item>
+</list>
+</text>
+</section>
+</component>
+</structuredBody>
+</component>
+</ClinicalDocument>
