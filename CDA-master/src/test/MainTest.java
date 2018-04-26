@@ -16,35 +16,35 @@ public class MainTest {
 		ClinicalDocument cda = new ClinicalDocument();
 		Paciente paciente = new Paciente();
 		
-		paciente.setId("123");
+		paciente.setId("143");
 		paciente.setNome("joao");
 		paciente.setSobrenome("meubom");
-		paciente.setEndereco("huehue");
-		paciente.setDdd("082");
-		paciente.setNumero("9924");
-		paciente.setGenero("W");
+		paciente.setEndereco("rua ufal");
+		paciente.setDdd("82");
+		paciente.setNumero("99248985");
+		paciente.setGenero("M");
 		paciente.setN_ano("1995");
 		paciente.setN_mes("05");
 		paciente.setN_dia("02");
 		paciente.setLocalnascimento("makina");
-		paciente.setAplicacao("qual?");
-		paciente.setEnderecolab("q lab?");
-		paciente.setNomelab("wtf");
+		paciente.setAplicacao("MyPred");
+		paciente.setEnderecolab("ufal");
+		paciente.setNomelab("ESC");
 		
 		Components_p comp1 = new Components_p();
-		comp1.setTitle("comp1");
+		comp1.setTitle("Remedios");
 		
 		LinkedList<String> l1 = new LinkedList();
-		l1.add("tomar remedio oi");
-		l1.add("tentar nao morrer");
+		l1.add("café");
+		l1.add("chá");
 		comp1.setItens(l1);
 		
 		Components_p comp2 = new Components_p();
-		comp2.setTitle("comp2");
+		comp2.setTitle("Exercicios");
 		
 		LinkedList<String> l2 = new LinkedList();
-		l2.add("nao tomar remedio");
-		l2.add("testar depois");
+		l2.add("Caminhada por dez minutos");
+		l2.add("Flexões");
 		comp2.setItens(l2);
 		
 		paciente.setComponents(comp1);
