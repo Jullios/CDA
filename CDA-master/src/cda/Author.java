@@ -18,7 +18,7 @@ public class Author {
 	private String author;
 	public String createAuthor(Paciente paciente){
 		author = "<author>" + "\n";
-		author = author + "<time value=" + "\"" + "data da criação"  + "\"" + "/>" + "\n";
+		author = author + "<time value=" + "\"" + "20180425"  + "\"" + "/>" + "\n"; //pegar data do sistema.
 		author = author + "<assignedAuthor>" + "\n" + "<id root='2.16.840.1.113883.3.933' extension='" 
 				 + paciente.getAplicacao() + "'/>";
 		author = author + "<assignedAuthoringDevice>" + "\n";
