@@ -17,7 +17,7 @@ public class LegalAuthenticator {
 	
 	public String createLegalAuthenticator(Paciente paciente){
 		legalauthenticator = "<legalAuthenticator>" + "\n";
-		legalauthenticator = legalauthenticator + "<time value=" + "\"" + "data de criação" + "\"" + "/>" + "\n";
+		legalauthenticator = legalauthenticator + "<time value=" + "\"" + "20180425" + "\"" + "/>" + "\n"; //pegar data do sistema.
 		legalauthenticator = legalauthenticator + "<signatureCode code=\"S\"/>" + "\n";
 		legalauthenticator = legalauthenticator + "<assignedEntity>" + "\n";
 		legalauthenticator = legalauthenticator + "<id extension=" + "\"" + paciente.getAplicacao() + "\"" 

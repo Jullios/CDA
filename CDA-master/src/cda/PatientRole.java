@@ -29,6 +29,8 @@ public class PatientRole {
 		}else{
 			patientrole = patientrole + "<telecom nullFlavor = \"UNK\">" + "\n";
 		}
-		return patientrole + patient.createPatient(paciente) + "</patientRole>" + "\n";
+		patientrole = patientrole +  patient.createPatient(paciente);
+		return patientrole + "<providerOrganization>" + "\n" + "<id extension=" + "\"MPred\"" + 
+				   " root=" + "\"2.16.840.1.113883.3.933\"" + "/>" +"\n" +"</providerOrganization>" + "\n" + "</patientRole>" + "\n";
 	}
 }

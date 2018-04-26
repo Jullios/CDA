@@ -15,7 +15,7 @@ public class StructuredBody {
 	public String createBody(Paciente paciente){
 	
 		LinkedList<Components_p> pacientComponent = paciente.getComponents();
-		structurebody = "<component>\n" + "<structureBody>\n" + "<languageCode code=\"pt-BR\"/>\n";
+		structurebody = "<component>\n" + "<structuredBody>\n" + "<languageCode code=\"pt-BR\"/>\n";
 		if(!pacientComponent.isEmpty())
 		{
 			for(int i = 0; i < pacientComponent.size(); i++){
@@ -24,7 +24,7 @@ public class StructuredBody {
 		
 		}
 	
-		structurebody = structurebody + "</structedBody>\n";
+		structurebody = structurebody + "</structuredBody>\n";
 		return structurebody + "</component>\n";
 	}
 

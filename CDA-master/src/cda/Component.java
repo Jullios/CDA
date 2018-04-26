@@ -21,7 +21,7 @@ public class Component {
 		itens = comp.getItens();
 		for(int i = 0; i < itens.size(); i++)
 		{
-			component = component + "<item>\n" + "<content>" + itens.get(i) + "</content>\n" + "<item>\n";
+			component = component + "<item>\n" + "<content>" + itens.get(i) + "</content>\n" + "</item>\n";
 			
 		}
 		component = component + "</list>\n" + "</text>\n" + "</section>\n";
