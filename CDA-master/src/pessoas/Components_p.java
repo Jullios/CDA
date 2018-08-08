@@ -3,8 +3,13 @@ package pessoas;
 import java.util.LinkedList;
 
 public class Components_p {
-	private String title;	
-	private LinkedList <String> itens = new LinkedList();
+	private String title = null;	
+	private LinkedList <String> itens = null;
+	
+	public int getItensSize(){
+		return itens.size();
+	}
+	
 	public String getTitle() {
 		return title;
 	}

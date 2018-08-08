@@ -16,6 +16,10 @@ public class Paciente {
 	private String enderecolab;
 	private LinkedList<Components_p> components = new LinkedList();
 	
+	public int getComponentsLenght(){
+		return components.size();
+	}
+	
 	public String getNomelab() {
 		return nomelab;
 	}

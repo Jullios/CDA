@@ -6,10 +6,10 @@ import java.io.File;
 import java.io.IOException;
 
 public class ClinicalDocument {
-	private String cda = "<?xml version=" + "\"1.0\"" + " encoding="+ "\"UTF-8\"?>" + "\n" + 
+	private String cda = "<?xml version=" + "\"1.0\"" + " encoding="+ "\"ISO-8859-1\"?>" + "\n" + 
 				"<ClinicalDocument classCode=\"DOCCLIN\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"urn:hl7-org:v3\">" 
 				+ "\n";
-	
+	//MUDANDO UTF-8 PARA TESTES
 	
 	
 	//-<ClinicalDocument classCode="DOCCLIN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
