@@ -1,0 +1,29 @@
+package cda;
+
+import pessoas.PacienteCda;
+
+/*
+ * <relatedDocument typeCode="RPLC">
+	<parentDocument>
+		<id extension="a123" root="2.16.840.1.113883.3.933"/>
+		<setId extension="BB35" root="2.16.840.1.113883.3.933"/>
+		<versionNumber value="1"/>
+	 </parentDocument>
+	</relatedDocument>
+*/
+public class RelatedDocument {
+	private String relateddocument;
+	
+	public String createRelatedDocument(PacienteCda pacienteCda){
+		
+		relateddocument = "<relatedDocument typeCode=\"RPLC\">" + "\n";
+		relateddocument = relateddocument + "<parentDocument>" + "\n";
+		relateddocument = relateddocument + "<id extension=" + "\"" + pacienteCda.getId() + "\"" + " root=\"2.16.840.1.113883.3.933\"/>" + "\n";
+		relateddocument = relateddocument + "<setId extension=\"BB35\" root=\"2.16.840.1.113883.3.933\"/>" + "\n"; //essa extensão não sei.
+		relateddocument = relateddocument +	"<versionNumber value=\"1\"/>" + "\n";	
+		relateddocument = relateddocument + "</parentDocument>" + "\n";
+		relateddocument = relateddocument + "</relatedDocument>";
+		
+		return this.relateddocument + "\n";
+	}
+}
