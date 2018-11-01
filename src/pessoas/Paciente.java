@@ -4,26 +4,52 @@ public class Paciente {
 
 		private int id;
 		private String nome;
-		private String senha; //não usa
+		private String senha; //nï¿½o usa
 		private String email;
 		private String sexo; // M/F ou m/f
 		private String nascimento; // 24/01/2018
 		private int idade;
-		private int exTotal;//não colocar
-		private int exMax;//não colocar
-		private int ultimaDica;//não colocar
+		private int exTotal;//nï¿½o colocar
+		private int exMax;//nï¿½o colocar
+		private int ultimaDica;//nï¿½o colocar
 		private double circunferencia;
 		private double peso;
 		private double altura;
 		private double imc;
-		private double hba1c; //não usa
+		private double hba1c; //nï¿½o usa
 		private double glicosejejum;
 		private double glicose75g;
 		private double hemoglobinaGlicolisada;
 		private double colesterol;
-		private double lipograma;//não usa
-		private double hemograma;//não usa
-		private double tireoide;//não usa
+		private double lipograma;//nï¿½o usa
+		private double hemograma;//nï¿½o usa
+		private double tireoide;//nï¿½o usa
+		
+		public Paciente(){
+			this.id = -1;
+			this.nome = null;
+			this.senha = null;
+			this.email = null;
+			this.sexo = null;
+			this.nascimento = null;
+			this.idade = -1;
+			this.exTotal = -1;
+			this.exMax = -1;
+			this.ultimaDica = -1;
+			this.circunferencia = -1;
+			this.peso = -1;
+			this.altura = -1;
+			this.imc = -1;
+			this.hba1c = -1;
+			this.glicosejejum = -1;
+			this.glicose75g = -1;
+			this.hemoglobinaGlicolisada = -1;
+			this.colesterol = -1;
+			this.lipograma = -1;
+			this.hemograma = -1;
+			this.tireoide = -1;
+		}
+		
 		
 		public int getId() {
 			return id;

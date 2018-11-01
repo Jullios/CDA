@@ -56,16 +56,19 @@ public class Patient {
 									switch(prElement.getTagName()){
 									case "id":				//SETAR ID
 										String id = prElement.getAttribute("extension");
+										if(id != null)
 										pacienteCda.setId(id);
 										break;
 										
 									case "addr":
 										String endereco = prElement.getTextContent();
+										if(endereco != null)
 										pacienteCda.setEndereco(endereco);
 										break;
 										
 									case "telecom":
 										String numero = prElement.getAttribute("value");
+										if(numero != null)
 										pacienteCda.setNumero(numero);
 										break;
 										
@@ -86,6 +89,10 @@ public class Patient {
 												
 												case"name":
 													
+													String nome = pfElement.getTextContent();
+													if(nome != null)
+													pacienteCda.setNome(nome);
+													/*
 													NodeList name = pfElement.getChildNodes();
 													for(int l = 0; l < name.getLength(); l++)
 													{
@@ -98,6 +105,7 @@ public class Patient {
 															switch(nfelement.getTagName()){
 															case "given":
 																String nome = nfelement.getTextContent();
+															//	System.out.println("DENTROO " + nome);
 																pacienteCda.setNome(nome);
 																break;
 																
@@ -108,11 +116,12 @@ public class Patient {
 															}
 														}
 													}
-													
+													*/
 													break;
 												
 												case"administrativeGenderCode":
 													String genero = pfElement.getAttribute("code");
+													if(genero != null)
 													pacienteCda.setGenero(genero);
 													break;
 													
@@ -191,7 +200,10 @@ public class Patient {
 									switch(sectionElement.getTagName()){
 									
 									case"title":
-										pacientComponent.setTitle(sectionElement.getTextContent());
+										String title = sectionElement.getTextContent();
+									//	System.out.println("DENTRO " + title);
+										if(title != null)
+										pacientComponent.setTitle(title);
 										break;
 									case"text":
 										NodeList sectionText = sectionElement.getChildNodes();
@@ -241,6 +253,7 @@ public class Patient {
 																			
 																			case"content":
 																				//System.out.println();
+																				if(itemAtualElement.getTextContent() != null)
 																				itens.add(itemAtualElement.getTextContent());
 																				break;
 																			
@@ -250,6 +263,7 @@ public class Patient {
 																		
 																	}
 																	//AQ
+																	if(!itens.isEmpty())
 																	pacientComponent.setItens(itens);
 																	break;
 															
@@ -285,6 +299,7 @@ public class Patient {
 						
 					}
 					//AQ
+					if(pacientComponent.getTitle() != null)
 					pacienteCda.setComponents(pacientComponent);	
 					
 				}

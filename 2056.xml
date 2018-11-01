@@ -1,15 +1,14 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ClinicalDocument classCode="DOCCLIN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
 <realmCode code='UV'/>
 <typeId root='2.16.840.1.113883.1.3' extension='ESC_MPD1'/>
 <templateId root='2.16.840.1.113883.10.20.1'/>
 <id root='M345' extension='2.16.840.1.113883.3.933'/>
-<code code='410.9' displayName='Diagnostico utilizando MyPred' codeSystem='2.16.840.1.113883.6.103' codeSystemName='ICD-9-CM'/>
-<effectiveTime value="20171003"/>
+<code code='410.9' displayName='Diagnostico utilizando MyPred Application' codeSystem='2.16.840.1.113883.6.103' codeSystemName='ICD-9-CM'/>
+<effectiveTime value="20181031"/>
 <confidentialityCode code="N" displayName='Normal' codeSystem='2.16.840.1.113883.5.25' codeSystemName='Confidentiality'/>
 <setId extension="MM1" root="2.16.840.1.113883.3.933"/>
 <versionNumber value="1"/>
-<copyTime value='20171003'/>
 <recordTarget>
 <patientRole>
 <id extension="2056" root="2.16.840.1.113883.3.933"/>
@@ -32,8 +31,8 @@ joao silva</name>
 <author>
 <time value="20180425"/>
 <assignedAuthor>
-<id root='2.16.840.1.113883.3.933' extension='MyPred'/><assignedAuthoringDevice>
-<softwareName>MyPred</softwareName>
+<id root='2.16.840.1.113883.3.933' extension='MyPred Application'/><assignedAuthoringDevice>
+<softwareName>MyPred Application</softwareName>
 </assignedAuthoringDevice>
 </assignedAuthor>
 </author>
@@ -49,9 +48,9 @@ joao silva</name>
 <time value="20180425"/>
 <signatureCode code="S"/>
 <assignedEntity>
-<id extension="MyPred" root="2.16.840.1.113883.3.933"/>
+<id extension="MyPred Application" root="2.16.840.1.113883.3.933"/>
 <representedOrganization>
-<name>ESC</name>
+<name>null</name>
 </representedOrganization>
 </assignedEntity>
 </legalAuthenticator>
@@ -79,10 +78,6 @@ joao silva</name>
 </content>
 </item>
 <item>
-<content>Altura: 1.8 m
-</content>
-</item>
-<item>
 <content>IMC: 26.2
 </content>
 </item>
@@ -96,7 +91,7 @@ joao silva</name>
 <text>
 <list>
 <item>
-<content>Glicose em jejum: 80.0 mg/dL
+<content>Hemoglobina glicolisada: 42.2 %
 </content>
 </item>
 <item>
@@ -104,7 +99,7 @@ joao silva</name>
 </content>
 </item>
 <item>
-<content>Hemoglobina glicolisada: 42.2%
+<content>Colesterol: 0.0 mg/dL
 </content>
 </item>
 </list>

@@ -22,19 +22,18 @@ public class MainTest {
 		paciente.setNascimento("20//01//1998");
 		paciente.setSexo("M");
 		
-		paciente.setAltura(1.80);
+	//	paciente.setAltura(1.80);
 		paciente.setCircunferencia(150);
 		paciente.setPeso(70.6);
 		paciente.setImc(26.2);
-		
-		
+		paciente.setColesterol(0);
 		paciente.setGlicose75g(89.2);
-		paciente.setGlicosejejum(80);
+	//	paciente.setGlicosejejum(80);
 		paciente.setHemoglobinaGlicolisada(42.2);
 		
 		
 		
-		System.out.println(cda.CreateCda(paciente));
+		cda.CreateCda(paciente);
 	}
 
 }

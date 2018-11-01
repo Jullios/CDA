@@ -2,7 +2,7 @@ package cda;
 
 public class AssignedAuthor {
 
-	private String id_local, endereço, telefone;
+	private String id_local, endereco, telefone;
 	
 	private String assinador;
 	
@@ -12,7 +12,7 @@ public class AssignedAuthor {
 		
 		assinador = "<assignedAutor>" + "\n";
 		assinador = assinador + "<id extension=" + "\"" + this.getId_local() + "\"" + "root="+"\"2.16.840.1.113883.3.933\"/>";
-		assinador = assinador + "<addr>" + this.getEndereço() + "</addr>";
+		assinador = assinador + "<addr>" + this.getEndereco() + "</addr>";
 		assinador = assinador + "<telecom value=" + "\"" + this.getTelefone() + "\"/>";
 		
 		return assinador + assPerson.assignedPerson() + "</assignedPerson>";
@@ -26,12 +26,12 @@ public class AssignedAuthor {
 		this.id_local = id_local;
 	}
 
-	public String getEndereço() {
-		return endereço;
+	public String getEndereco() {
+		return endereco;
 	}
 
-	public void setEndereço(String endereço) {
-		this.endereço = endereço;
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
 	}
 
 	public String getTelefone() {
